@@ -69,7 +69,7 @@ A dedicated Goalkeeper Interface was also created using IntSlider widgets for sp
 
 The system is modular and extendable — additional metrics (e.g., duels won per game) can be easily integrated in future iterations by updating the widget configuration and underlying data structure.
 
-🧠 Technical Highlights
+# Technical Highlights
 Stage	Focus	Implementation
 Stage 2 – Extraction	Retrieve HTML tables from FBref	pandas.read_html()
 Stage 3 – Preparation	Clean and flatten multi-level column headers	String manipulation & reset_index()
@@ -77,7 +77,8 @@ Stage 4 – Integration	Merge datasets from multiple statistical domains	Column 
 Stage 5 – Storage	Produce clean CSVs for analysis and visualisation	.fillna(0), column renaming, reformatting
 Stage 6 – Composite statistics are used for predicitive modeling to help find undervalued footballers. 
 Stage 7 – Scouting Interface	Create interactive player filtering system	ipywidgets (IntSlider, dropdowns, dynamic output)
-🧰 Technologies Used
+
+# Technologies Used
 
 Language: Python 3
 
@@ -100,9 +101,8 @@ FBref.com
  – Players estimated transfer market values.
 
 # Project Structure
-📂 henderson-sports-analytics/
+📂 Moneyball_Project/
 │
-
 ├── 💻 Final Project Code (Data Preparation).ipynb # Data extraction, cleaning, storage & integration (Stages 2–5)                     │   ├── goalkeepers_cleaned.csv
 │   ├── defenders_cleaned.csv
 │   ├── midfielders_cleaned.csv
@@ -110,13 +110,12 @@ FBref.com
 │ 
 ├── 📊 Player Score.ipynb                          # Player Score metric created for each position
 │
-├── 📈 Player Score and Predicted Performance.ipynb # Combined analysis of player scoring and predictions
+├── 📈 Player Score and Predicted Performance.ipynb # Predicted_Performance with Player Score (target variable) using Random Forest.
 │
 ├── 💰 Predicted Value and Estimated Transfer Value.ipynb # Market valuation & predictive transfer modeling
 │
-├── 🧠 Scouting System.ipynb                       # Interactive scouting interfaces (Outfield & Goalkeeper widgets)
-│
-└── 📘 README.md                                   # Project documentation (this file)
+└── 🧠 Scouting System.ipynb                       # Interactive scouting interfaces (Outfield & Goalkeeper widgets)
+
 
 🚀 How to Run
 1️⃣ Clone the Repository
@@ -126,8 +125,9 @@ cd henderson-sports-analytics
 2️⃣ Install Dependencies
 pip install -r requirements.txt
 
-3️⃣ Run the Data Pipeline
-python henderson_pipeline.py
+3️⃣ Run the files in the following order:
+1) Final Project Code (Data Preparation).ipynb 2) Player Score.ipynb
+3) Player Score and Predicted Performance.ipynb 4) Predicted Value and Estimated Transfer Value.ipynb
 
 4️⃣ Launch the Interactive Scouting Interface
 
@@ -135,7 +135,7 @@ Open the Jupyter Notebook and run the scouting interface:
 
 jupyter notebook scouting_interface.ipynb
 
-📈 Example Output
+# Example Output
 
 Cleaned Data Example (Outfield Players):
 
@@ -152,7 +152,7 @@ Filter by position, team, or age group.
 
 Identify players that best match desired statistical profiles.
 
-🧩 Future Enhancements
+# Future Enhancements
 
 📊 Add advanced performance metrics (e.g., Ball Recoveries, Expected Threat (xT)).
 
@@ -168,7 +168,7 @@ Identify players that best match desired statistical profiles.
 
 Data Engineering & ETL Design
 
-Interactive Data Visualization (ipywidgets)
+Interactive Data Visualisation (ipywidgets & matplot)
 
 Sports Analytics & Predictive Modeling
 
