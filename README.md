@@ -2,7 +2,7 @@
 
 # Overview
 
-The jupyter notebook files of this project automates stages 2–5 of the Henderson Sports Analytical Model, encompassing:
+The jupyter notebook files of this project automates stages 2–6 of the Henderson Sports Analytical Model, encompassing:
 
 Data Extraction — Automated retrieval of player statistics from FBref.com
  for the 2023–2024 European football season.
