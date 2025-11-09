@@ -91,6 +91,7 @@ Environment: Jupyter Notebook / JupyterLab
 Repository structure
 --------------------
 Moneyball_Project/
+- Dataset to import: players.csv
 - Final Project Code (Data Preparation).ipynb — Extraction, cleaning, integration (Stages 2–5)
   - goalkeepers_cleaned.csv
   - defenders_cleaned.csv
@@ -127,7 +128,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 - Run notebooks in this order:
-  1. Final Project Code (Data Preparation).ipynb
+  1. Final Project Code (Data Preparation).ipynb (Notebook will also import "players.csv" dataset).
   2. Player Score.ipynb
   3. Player Score and Predicted Performance.ipynb
   4. Predicted Value and Estimated Transfer Value.ipynb
